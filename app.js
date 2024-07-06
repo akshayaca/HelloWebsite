@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set EJS as the template engine
 app.set('view engine', 'ejs');
 
-// Define a route to serve the HTML file
+// Define a route to serve the HTML file.
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
